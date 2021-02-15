@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo img {
+    width: 150px;
+    height: 100px;
+    margin: 0 50px 0 20px;
+}
+
+.row ul li {
+    display: inline;
+    margin: 10px;
+    font-size: large;
+}
+.row ul {
+    display: inline;
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color: #FFFB00;
+}
