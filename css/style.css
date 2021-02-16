@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo img {
+    width: 150px;
+    height: 100px;
+    margin: 0 50px 0 20px;
+}
+
+.row ul li a {
+    color: white;
+}
+.row ul li {
+    display: inline;
+    margin: 10px;
+}
+.row ul {
+    display: inline;
+    float: right;
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+}
+
+.pn {
+    margin: 75px 50px 0 400px;
+}
+.whyus {
+    display: flex;
+    margin-top: 50px;
+}
+.whyus img {
+    width: 300px;
+    height: auto;
+}
+
+.imain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.imain img {
+    width: 600px;
+    height: auto;
+}
+
+.imain a {
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+    width: 50px;
+    border-radius: 30%;
+    text-align: center;
+}
