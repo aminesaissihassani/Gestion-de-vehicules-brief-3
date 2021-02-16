@@ -58,7 +58,58 @@ header {
     background-color: black;
     color: white;
     padding: 20px 50px;
-    width: 50px;
+    width: 70px;
     border-radius: 30%;
     text-align: center;
+}
+
+section div h1 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-left-color: black;
+    border-right-color: black;
+}
+
+.gmain {
+    margin-top: 40px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+}
+
+.gmain .gallery {
+    width: 200px;
+    border: 1px solid #000;
+    margin-bottom: 40px;
+}
+
+.gmain .gallery img {
+    width: 200px;
+    height: 120px;
+}
+
+.gmain .gallery .desc {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    padding-left: 20px;
+    height: 50px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+footer div p {
+    margin-right: 20px;
 }
