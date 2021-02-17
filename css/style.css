@@ -31,7 +31,7 @@ header {
 }
 
 .pn {
-    margin: 75px 50px 0 400px;
+    margin: 5% 5% 0 25%;
 }
 .whyus {
     display: flex;
@@ -85,7 +85,6 @@ section div h1 {
 
 .gmain .gallery {
     width: 200px;
-    border: 1px solid #000;
     margin-bottom: 40px;
 }
 
@@ -97,6 +96,37 @@ section div h1 {
 .gmain .gallery .desc {
     text-align: center;
 }
+
+/* start reservation */
+
+.reservation {
+    display: flex;
+    justify-content: center;
+}
+
+.reservation-form {
+    width: 75%;
+    margin-top: 20px;
+    text-align: center;
+    border: 5px solid black;
+}
+
+.reservation-form label {
+    border-style: inherit;
+    margin: 0 1% 0 0;
+}
+
+[type="submit"] {
+    width: 65px;
+    height: 25px;
+    color: aliceblue;
+    background-color: black;
+    border-color: black;
+}
+
+/* end reservation */
+
+/* start footer */
 
 footer {
     background-color: black;
@@ -113,3 +143,5 @@ footer div {
 footer div p {
     margin-right: 20px;
 }
+
+/* end footer */
