@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 a {
     text-decoration: none;
 }
@@ -106,13 +107,13 @@ section div h1 {
 
 .reservation-form {
     width: 75%;
-    margin-top: 20px;
+    margin: 20px 0;
     text-align: center;
     border: 5px solid black;
 }
 
-.reservation-form label {
-    border-style: inherit;
+.reservation-form div label {
+    display: inline-block;
     margin: 0 1% 0 0;
 }
 
@@ -124,7 +125,62 @@ section div h1 {
     border-color: black;
 }
 
+.reservation-form div label img{
+    width: 200px;
+    height: 120px;
+}
+
+.reservation-form div label{
+    width: 200px;
+    height: 120px;
+}
+
+
+
 /* end reservation */
+
+/* start contact */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form label {
+    margin: 10px 0;
+}
+
+.contact-form label input {
+    display: block;
+}
+
+.message {
+    width: 400px;
+    height: 200px;
+    display: block;
+}
+
+.sujet {
+    width: 400px;
+}
+
+.name {
+    width: 400px;
+}
+
+.email {
+    width: 400px;
+}
+
+.error {
+    color: red;
+}
+
+
+/* end contact */
+
 
 /* start footer */
 

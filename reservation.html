@@ -6,11 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Réservation</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script> 
     </head>
     <body>
         <header>
             <div class="logo">
-                <img src="img/ra7tk.png" alt="ra7tk logo">
+                <a href="index.html"><img src="img/ra7tk.png" alt="ra7tk logo"></a>
             </div>
             <div class="row">
                 <ul>
@@ -28,19 +29,21 @@
             </div>
         </section>
 
-        <main class="reservation">
+        <main id="reservation" class="reservation">
             <form class="reservation-form">
-                <label for="moto"><input id="moto" value="moto" type="radio" name="vehicle"> Moto </label>
-                <label for="citadine"><input id="citadine" value="citadine" type="radio" name="vehicle"> Citadine </label>
-                <label for="compact"><input id="compact" value="compact" type="radio" name="vehicle"> Compact </label>
-                <label for="berline"><input id="berline" value="berline" type="radio" name="vehicle"> Berline </label>
-                <label for="utilitaire"><input id="utilitaire" value="utilitaire" type="radio" name="vehicle"> Utilitaire </label>
-                <label for="engin-de-chantier"><input id="engin-de-chantier" value="engin-de-chantier" type="radio" name="vehicle"> Engin de chantier </label>
-                <label for="camion"><input id="camion" value="camion" type="radio" name="vehicle"> Camion </label>
+                <div class="type">
+                <label for="moto"><img src="img/moto.jpg" alt="moto"><input onchange="" id="moto" value="moto" type="radio" name="vehicle">  Moto </label>
+                <label for="citadine"><img src="img/citadine.jpg" alt="citadine"><input id="citadine" value="citadine" type="radio" name="vehicle"> Citadine </label>
+                <label for="compact"><img src="img/compact.jpg" alt="compact"><input id="compact" value="compact" type="radio" name="vehicle"> Compact </label>
+                <label for="berline"><img src="img/berline.jpg" alt="berline"><input id="berline" value="berline" type="radio" name="vehicle"> Berline </label>
+                <label for="utilitaire"><img src="img/utilitaire.jpg" alt="utilitaire"><input id="utilitaire" value="utilitaire" type="radio" name="vehicle"> Utilitaire </label>
+                <label for="engin-de-chantier"><img src="img/engin-de-chantier.jpg" alt="engin de chantier"><input id="engin-de-chantier" value="engin-de-chantier" type="radio" name="vehicle"> Engin de chantier </label>
+                <label for="camion"><img src="img/camion.jpg" alt="camion"><input id="camion" value="camion" type="radio" name="vehicle"> Camion </label>
+                </div>
                 <br><br><button type="submit">Submit</button>
             </form>
         </main>
-
+        
         <footer>
             <div>
                 <p>Call us: 06060606060606</p>

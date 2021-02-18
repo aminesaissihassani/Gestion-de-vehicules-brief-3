@@ -6,11 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script> 
     </head>
     <body>
         <header>
             <div class="logo">
-                <img src="img/ra7tk.png" alt="ra7tk logo">
+                <a href="index.html"><img src="img/ra7tk.png" alt="ra7tk logo"></a>
             </div>
             <div class="row">
                 <ul>
@@ -27,6 +28,15 @@
             </div>
         </section>
 
+        <main class="contact">
+            <div class="contact-form">
+                <label>Nom: <input id="name"  class="name" value="" type="text" name="name"><p id="nameChecker" class="error"></p></label>
+                <label>Email: <input id="email" class="email" value="" type="text" name="contact"><p id="emailChecker" class="error"></p></label>
+                <label>Sujet: <input id="sujet" class="sujet" value="" type="text" name="contact"><p id="sujetChecker" class="error"></p></label>
+                <label>Message: <textarea id="message" class="message" value="" name="contact"></textarea><p id="messageChecker" class="error"></p></label>
+                <br><br><button type="submit" onclick="contactcheck()">Submit</button>
+            </div>
+        </main>
 
         <footer>
             <div>
