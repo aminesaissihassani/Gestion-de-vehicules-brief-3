@@ -178,6 +178,9 @@ function calculFoloss(event) {
     if (/^\D+$/.test(foloss)) {
         document.getElementById("error").innerHTML += "The input should be numbers";
         return false;
+    } else if (foloss < 0) {
+        document.getElementById("error").innerHTML += "The number of days should be positive";
+        return false;
     }
 
     document.getElementById("foloss").innerHTML += "Le prix est: " + foloss + "€";

@@ -6,9 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
         <script src="js/script.js"></script> 
     </head>
-    <body>
+    <body class="contact-body">
         <header>
             <div class="logo">
                 <a href="index.html"><img src="img/ra7tk.png" alt="ra7tk logo"></a>
@@ -29,12 +30,20 @@
         </section>
 
         <main class="contact">
-            <div class="contact-form">
-                <label>Nom: <input id="name"  class="name" value="" type="text" name="name"><p id="nameChecker" class="error"></p></label>
-                <label>Email: <input id="email" class="email" value="" type="text" name="contact"><p id="emailChecker" class="error"></p></label>
-                <label>Sujet: <input id="sujet" class="sujet" value="" type="text" name="contact"><p id="sujetChecker" class="error"></p></label>
-                <label>Message: <textarea id="message" class="message" value="" name="contact"></textarea><p id="messageChecker" class="error"></p></label>
-                <br><br><button type="submit" onclick="contactcheck()">Submit</button>
+            <div class="contact-section">
+                <div class="contact-info">
+                    <div><i class="fas fa-map-marker-alt"></i>69 Safi Street, ElJadida, Morocco</div>
+                    <div><i class="fas fa-envelope"></i>contact@cars.com</div>
+                    <div><i class="fas fa-phone"></i>+212 500000000</div>
+                    <div><i class="fas fa-clock"></i>Mon - Fri 9:00 AM - 5:00 PM</div>
+                </div>
+                <div class="contact-form">
+                    <label for="name"><input id="name"  class="text-box" value="" placeholder="Ton nom" type="text" name="name"><span id="nameChecker" class="error"></span></label>
+                    <label for="email"><input id="email" class="text-box" value="" placeholder="Ton E-mail" type="text" name="contact"><span id="emailChecker" class="error"></span></label>
+                    <label for="sujet"><input id="sujet" class="text-box" value="" placeholder="Le sujet" type="text" name="contact"><span id="sujetChecker" class="error"></span></label>
+                    <label for="message"><textarea id="message" class="message" value="" placeholder="Le Message" name="contact"></textarea><span id="messageChecker" class="error"></span></label>
+                    <br><br><button type="submit" class="submit-button" onclick="contactcheck()">Submit</button>
+                </div>
             </div>
             <div id="data-show" class="data-show">
                 <p id="name-show">name</p>
@@ -42,7 +51,6 @@
                 <p id="sujet-show"></p>
                 <p>Message: </p>
                 <textarea id="message-show" rows="20" readonly></textarea>
-                <!-- <span id="message-show"></span> -->
             </div>
         </main>
 
