@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+textarea {
+    resize: none;
+}
+
 .logo img {
     width: 150px;
     height: 100px;
@@ -135,6 +139,9 @@ section div h1 {
     height: 120px;
 }
 
+.justsome {
+    margin-top: 50px;
+}
 
 
 /* end reservation */
@@ -178,7 +185,36 @@ section div h1 {
     color: red;
 }
 
+.data-show {
+    display: none;
+    top: 20%;
+    left: 34.1%;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 5px gray;
+    width: auto;
+    height: 500px;
+    border-radius: 3%;
+}
 
+.data-show p {
+    margin: 10px 6px;
+}
+.data-show textarea {
+    margin: 10px 6px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 500px;
+    border:none;
+}
+
+#message-show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 /* end contact */
 
 

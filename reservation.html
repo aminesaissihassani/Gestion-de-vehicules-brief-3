@@ -30,16 +30,27 @@
         </section>
 
         <main id="reservation" class="reservation">
-            <form class="reservation-form">
-                <div class="type">
-                <label for="moto"><img src="img/moto.jpg" alt="moto"><input onchange="" id="moto" value="moto" type="radio" name="vehicle">  Moto </label>
-                <label for="citadine"><img src="img/citadine.jpg" alt="citadine"><input id="citadine" value="citadine" type="radio" name="vehicle"> Citadine </label>
-                <label for="compact"><img src="img/compact.jpg" alt="compact"><input id="compact" value="compact" type="radio" name="vehicle"> Compact </label>
-                <label for="berline"><img src="img/berline.jpg" alt="berline"><input id="berline" value="berline" type="radio" name="vehicle"> Berline </label>
-                <label for="utilitaire"><img src="img/utilitaire.jpg" alt="utilitaire"><input id="utilitaire" value="utilitaire" type="radio" name="vehicle"> Utilitaire </label>
-                <label for="engin-de-chantier"><img src="img/engin-de-chantier.jpg" alt="engin de chantier"><input id="engin-de-chantier" value="engin-de-chantier" type="radio" name="vehicle"> Engin de chantier </label>
-                <label for="camion"><img src="img/camion.jpg" alt="camion"><input id="camion" value="camion" type="radio" name="vehicle"> Camion </label>
+            <form id="reservation-form" class="reservation-form" onsubmit="calculFoloss(event)">
+                <div id="type" class="type">
+                <label for="moto"><img src="img/moto.jpg" alt="moto"><input onchange="showOptions(this)" id="moto" value="moto" type="radio" name="vehicle">  Moto </label>
+                <label for="citadine"><img src="img/citadine.jpg" alt="citadine"><input onchange="showOptions(this)" id="citadine" value="citadine" type="radio" name="vehicle"> Citadine </label>
+                <label for="compact"><img src="img/compact.jpg" alt="compact"><input onchange="showOptions(this)"t id="compact" value="compact" type="radio" name="vehicle"> Compact </label>
+                <label for="berline"><img src="img/berline.jpg" alt="berline"><input onchange="showOptions(this)" id="berline" value="berline" type="radio" name="vehicle"> Berline </label>
+                <label for="utilitaire"><img src="img/utilitaire.jpg" alt="utilitaire"><input onchange="showOptions(this)" id="utilitaire" value="utilitaire" type="radio" name="vehicle"> Utilitaire </label>
+                <label for="engin-de-chantier"><img src="img/engin-de-chantier.jpg" alt="engin de chantier"><input onchange="showOptions(this)" id="engin-de-chantier" value="engin-de-chantier" type="radio" name="vehicle"> Engin de chantier </label>
+                <label for="camion"><img src="img/camion.jpg" alt="camion"><input onchange="showOptions(this)" id="camion" value="camion" type="radio" name="vehicle"> Camion </label>
                 </div>
+
+                <div id="carburant" class="justsome"></div>
+
+                <div id="boite" class="justsome"></div>
+                
+                <div id="howManyDays"></div>
+
+                <div id="error" class="error"></div>
+
+                <div id="foloss"></div>
+
                 <br><br><button type="submit">Submit</button>
             </form>
         </main>
