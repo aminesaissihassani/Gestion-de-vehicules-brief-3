@@ -139,6 +139,8 @@ var vehicle = {
 // vehicle[type]["carburant"][0]
 function showOptions(src) {
     var type = src.value;
+    document.getElementById("foloss").innerHTML = "";
+    document.getElementById("error").innerHTML = "";
     document.getElementById("carburant").innerHTML = '';
     document.getElementById("boite").innerHTML = '';
     for (var i in vehicle[type]["carburant"]) {
@@ -170,7 +172,7 @@ function calculFoloss(event) {
     + vehicle[shi.vehicle.value]["prix"] * vehicle[shi.vehicle.value]["carburant"][shi.carburant.value] 
     + vehicle[shi.vehicle.value]["prix"] * vehicle[shi.vehicle.value]["boite"][shi.boite.value]) * shi.days.value;
 
-    document.getElementById("foloss").innerHTML += "Le prix est: " + foloss;
+    document.getElementById("foloss").innerHTML += "Le prix est: " + foloss + "€";
 }
 
 
