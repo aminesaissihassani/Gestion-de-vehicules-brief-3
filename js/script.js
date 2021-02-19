@@ -61,7 +61,6 @@ var vehicle = {
             "essence": 0.14,
         },
         "boite": {
-            "manuelle": 0,
         },
         "prix": 10
     },
@@ -98,7 +97,6 @@ var vehicle = {
             "diesel": 0.21,
         },
         "boite": {
-            "manuelle": 0,
             "automatique": 0.19,
         },
         "prix": 20
@@ -130,7 +128,6 @@ var vehicle = {
             "diesel": 0.21,
         },
         "boite": {
-            "manuelle": 0,
             "automatique": 0.19,
         },
         "prix": 250
@@ -147,9 +144,9 @@ function showOptions(src) {
         document.getElementById("carburant").innerHTML += '<label for="' + i + '"><input id="' + i + '" value="' + i + '" type="radio" name="carburant">  ' + i +' </label>';
     }
     for (var i in vehicle[type]["boite"]) {
-        document.getElementById("boite").innerHTML += '<label for="' + i + '"><input id="' + i + '" value="' + i + '" type="radio" name="boite">  ' + i +' </label>';
+        document.getElementById("boite").innerHTML += '<label for="' + i + '"><input id="' + i + '" value="' + i + '" type="radio" name="boite" checked>  ' + i +' </label>';
     }
-    document.getElementById("howManyDays").innerHTML = '<label for="days"><input id="days" value="1" type="text" name="days"></label>'
+    document.getElementById("howManyDays").innerHTML = '<label for="days">How many days: <input id="days" value="1" type="text" name="days"></label>'
 }
 
 function calculFoloss(event) {
@@ -163,14 +160,25 @@ function calculFoloss(event) {
         document.getElementById("error").innerHTML += "You should complete the form";
         return false;
     }
-    if (!shi.vehicle.value || !shi.carburant.value || !shi.boite.value) {
+    if (!shi.vehicle.value || !shi.carburant.value) {
         document.getElementById("error").innerHTML += "You should complete the form";
         return false;
     }
 
-    foloss = (vehicle[shi.vehicle.value]["prix"] 
-    + vehicle[shi.vehicle.value]["prix"] * vehicle[shi.vehicle.value]["carburant"][shi.carburant.value] 
-    + vehicle[shi.vehicle.value]["prix"] * vehicle[shi.vehicle.value]["boite"][shi.boite.value]) * shi.days.value;
+    if (shi.vehicle.value == "moto") {
+        foloss = (vehicle[shi.vehicle.value]["prix"] 
+        + vehicle[shi.vehicle.value]["prix"] * vehicle[shi.vehicle.value]["carburant"][shi.carburant.value] ) * shi.days.value;
+    } else {
+        foloss = (vehicle[shi.vehicle.value]["prix"] 
+        + vehicle[shi.vehicle.value]["prix"] * vehicle[shi.vehicle.value]["carburant"][shi.carburant.value] 
+        + vehicle[shi.vehicle.value]["prix"] * vehicle[shi.vehicle.value]["boite"][shi.boite.value]) * shi.days.value;
+    }
+    
+
+    // if (foloss == "NaN") {
+    //     document.getElementById("error").innerHTML += "The input should be numbers";
+    //     return false;
+    // }
 
     document.getElementById("foloss").innerHTML += "Le prix est: " + foloss + "€";
 }
