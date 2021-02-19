@@ -175,10 +175,10 @@ function calculFoloss(event) {
     }
     
 
-    // if (foloss == "NaN") {
-    //     document.getElementById("error").innerHTML += "The input should be numbers";
-    //     return false;
-    // }
+    if (/^\D+$/.test(foloss)) {
+        document.getElementById("error").innerHTML += "The input should be numbers";
+        return false;
+    }
 
     document.getElementById("foloss").innerHTML += "Le prix est: " + foloss + "€";
 }

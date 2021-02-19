@@ -12,6 +12,8 @@ textarea {
     resize: none;
 }
 
+/* navbar start */
+
 .logo img {
     width: 150px;
     height: 100px;
@@ -34,6 +36,11 @@ header {
     align-items: center;
     background-color: #000000;
 }
+
+@media only screen and (max-width: 550px) {
+
+}
+/* navbar end */
 
 .pn {
     margin: 5% 5% 0 25%;
