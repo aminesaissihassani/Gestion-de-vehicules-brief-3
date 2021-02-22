@@ -2,7 +2,7 @@
 
 function contactcheck() {
     var name = document.getElementById("name").value;
-    var namere = /^\D+$/;
+    var namere = /^[A-Za-z ]+$/;
     var nameChecker = namere.test(name);
 
     var email = document.getElementById("email").value;
