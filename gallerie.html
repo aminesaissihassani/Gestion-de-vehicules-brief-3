@@ -7,6 +7,7 @@
         <title>Gallerie</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <script src="js/menu.js"></script>
     </head>
 
     <body class="gbody">
@@ -14,7 +15,7 @@
             <div class="logo">
                 <a href="index.html"><img src="img/ra7tk.png" alt="ra7tk logo"></a>
             </div>
-            <div class="row">
+            <div class="row" id="row">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="gallerie.html">Gallerie</a></li>
@@ -22,6 +23,10 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+            <input type="checkbox" id="check" onchange="menu(this)" name="checkbox">
+            <label for="check" class="menu">
+                <p>Menu</p>
+            </label>
         </header>
 
         <section>

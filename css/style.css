@@ -121,6 +121,17 @@ section div h1 {
     border-right-color: black;
 }
 
+@media only screen and (max-width: 550px) {
+    .imain img {
+        width: 400px;
+    }
+
+    .whyus {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* gallery start */
 
 .gbody {
@@ -154,8 +165,11 @@ section div h1 {
 
 @media only screen and (max-width: 550px) {
     .gmain {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 25% 25% 25% 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
     }
 }
 
@@ -309,19 +323,6 @@ section div h1 {
     background: #0582E3;
 }
 
-@media screen and (max-width: 950px){
-    .contact-section{
-    flex-direction: column;
-    }
-
-    .contact-info, .contact-form{
-    margin: 30px 50px;
-    }
-
-    .contact-form .text-box{
-    width: 100%;
-    }
-}
 
 .error {
     color: red;
@@ -360,6 +361,29 @@ section div h1 {
     align-items: center;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 950px){
+    .contact-section{
+    flex-direction: column;
+    }
+
+    .contact-info, .contact-form{
+    margin: 30px 50px;
+    }
+
+    .contact-form .text-box{
+    width: 100%;
+    }
+
+    .data-show textarea {
+        width: 98%;
+    }
+
+    .data-show {
+        left: 1%;
+        width: 98%
+    }
+}
 /* end contact */
 
 
@@ -385,6 +409,8 @@ footer div p {
 @media only screen and (max-width: 550px) {
     footer div {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     footer {
