@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
 }
-
 
 a {
     text-decoration: none;
@@ -12,6 +9,16 @@ a {
 
 textarea {
     resize: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 /* navbar start */
@@ -39,8 +46,34 @@ header {
     background-color: #000000;
 }
 
-@media only screen and (max-width: 550px) {
+.menu {
+    color: white;
+    border: 1px solid white;
+    padding: 3px 6px;
+    position: absolute;
+    left: 80%;
+    top: 5%;
+    display: none;
+}
 
+#check {
+    display: none;
+}
+
+@media only screen and (max-width: 550px) {
+    header {
+        display: block;
+    }
+    #row {
+        display: none;
+        float: left;
+        background-color: black;
+        padding-bottom: 10px;
+    }
+    
+    .menu {
+        display: block;
+    }
 }
 /* navbar end */
 
@@ -154,6 +187,7 @@ section div h1 {
 }
 
 .reservation-form div label img{
+    border-radius: 5px;
     width: 200px;
     height: 120px;
 }
@@ -329,6 +363,7 @@ footer {
     padding-top: 30px;
     padding-left: 20px;
     height: 50px;
+    margin-top: auto;
 }
 
 footer div {
@@ -337,6 +372,16 @@ footer div {
 }
 footer div p {
     margin-right: 20px;
+}
+
+@media only screen and (max-width: 550px) {
+    footer div {
+        flex-direction: column;
+    }
+
+    footer {
+        height: 130px;
+    }
 }
 
 /* end footer */

@@ -6,13 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Accueil</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/menu.js"></script>
     </head>
     <body>
         <header>
             <div class="logo">
                 <a href="index.html"><img src="img/ra7tk.png" alt="ra7tk logo"></a>
             </div>
-            <div class="row">
+            <div class="row" id="row">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="gallerie.html">Gallerie</a></li>
@@ -20,6 +21,10 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+            <input type="checkbox" id="check" name="checkbox">
+            <label for="check" class="menu">
+                <p>Menu</p>
+            </label>
         </header>
         <main>
             <div class="whyus">
