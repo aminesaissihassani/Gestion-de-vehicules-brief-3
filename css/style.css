@@ -152,7 +152,15 @@ section div h1 {
     text-align: center;
 }
 
-/* gallery start */
+@media only screen and (max-width: 550px) {
+    .gmain {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+}
+
+
+/* gallery end */
 
 /* start reservation */
 
