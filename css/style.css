@@ -60,6 +60,10 @@ header {
     display: none;
 }
 
+#row {
+    display: block;
+}
+
 @media only screen and (max-width: 550px) {
     header {
         display: block;
